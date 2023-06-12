@@ -1,0 +1,14 @@
+{
+  "user": [
+    {},
+    {
+      "id": "akhil",
+      "name": "akhil kukadiya",
+      "password": "Akhil@123",
+      "email": "akhil@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isActive": true
+    }
+  ]
+}
