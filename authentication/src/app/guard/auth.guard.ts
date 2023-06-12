@@ -9,5 +9,13 @@ export const authGuard: CanActivateFn = (route, state) => {
     router.navigate(['/login']);
     return false;
   }
-  return true;
+
+  if(service.GetUserRole() != 'admin'){
+    router.navigate(['']);
+    
+  return false;
+
+  }
+  return true
+
 };

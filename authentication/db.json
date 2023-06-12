@@ -1,13 +1,12 @@
 {
   "user": [
-   
     {
       "id": "akhil",
       "name": "akhil kukadiya",
       "password": "Akhil@123",
       "email": "akhil@gmail.com",
       "gender": "male",
-      "role": "user",
+      "role": "admin",
       "isActive": true
     },
     {
@@ -16,8 +15,8 @@
       "password": "Password1@123",
       "email": "user1@gmail.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "admin",
+      "isActive": false
     },
     {
       "id": "user2",
@@ -25,8 +24,8 @@
       "password": "Password2@123",
       "email": "user2@gmail.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "guest",
+      "isActive": false
     },
     {
       "id": "user3",
@@ -43,7 +42,7 @@
       "password": "Password4@123",
       "email": "user4@gmail.com",
       "gender": "female",
-      "role": "user",
+      "role": "admin",
       "isActive": true
     },
     {
@@ -190,18 +189,15 @@
       "role": "user",
       "isActive": true
     }
-    
   ],
-  "role":[
+  "role": [
     {
       "id": "admin",
       "name": "admin"
-      
     },
     {
       "id": "user",
       "name": "user"
-     
     },
     {
       "id": "guest",

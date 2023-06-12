@@ -34,14 +34,19 @@ export class UserLisingComponent {
 
   UpdateUser(id:any){
 
-    this.dialog.open(UpdatePopUpComponent, {
+    
+
+  }
+  openDialog(id:any) {
+   const popup= this.dialog.open(UpdatePopUpComponent, {
       enterAnimationDuration:'500ms',
       exitAnimationDuration:'500ms',
       width:'50%',
       data: {id:id}
     })
-
-  }
-  openDialog(id:any) {
+    popup.afterClosed().subscribe(res=>{
+      this.loadUser();
+    }
+    )
   }
 }

@@ -25,7 +25,7 @@ export class AuthService {
     }
 
     //update
-    Update(id:number,user:any){
+    Update(id:any,user:any){
       return this.http.put(this.apiUrl+'/user/'+id,user);
     }
 
