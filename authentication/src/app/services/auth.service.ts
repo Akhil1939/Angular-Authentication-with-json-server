@@ -34,4 +34,15 @@ export class AuthService {
     Login(user:any){
       return this.http.post(this.apiUrl+'/user/login',user);
     }
+
+    IsLoggedIn(){
+      return !!sessionStorage.getItem('username');
+    }
+
+    GetUserRole(){
+      return sessionStorage.getItem('userRole');
+    }
+    GetAllRole(){
+      return this.http.get(this.apiUrl+'/role');
+    }
 }

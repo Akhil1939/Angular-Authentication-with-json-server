@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanActivateFn } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { LoginComponent } from './Components/login/login.component';
 import { UserLisingComponent } from './Components/user-lising/user-lising.component';
+import { authGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
   },
   {
     path:'users',
-    component:UserLisingComponent
+    component:UserLisingComponent,
+    canActivate:[authGuard]
   }
 ];
 

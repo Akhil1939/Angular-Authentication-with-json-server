@@ -15,6 +15,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { HomeComponent } from './Components/home/home.component';
 import { UserLisingComponent } from './Components/user-lising/user-lising.component';
 import { UpdatePopUpComponent } from './Components/update-pop-up/update-pop-up.component'
+import { authGuard } from './guard/auth.guard';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UpdatePopUpComponent } from './Components/update-pop-up/update-pop-up.c
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    
    
   ],
   providers: [],
