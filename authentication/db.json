@@ -25,7 +25,7 @@
       "email": "user2@gmail.com",
       "gender": "male",
       "role": "guest",
-      "isActive": false
+      "isActive": true
     },
     {
       "id": "user3",
